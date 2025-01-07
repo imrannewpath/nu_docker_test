@@ -3,6 +3,7 @@ project/wp-content/uploads
 
 #ignore gulp generated files
 project/wp-content/themes/nufarm/dist
+project/wp-content/themes/nufarm/node_modules
 
 # other random files
 project/server.txt

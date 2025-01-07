@@ -46,6 +46,6 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp=/usr/inc
 
 COPY ./project /var/www/html
 
-COPY --from=build /nufarm/dist /usr/local/apache2/htdocs/dist
+COPY --from=build /nufarm/dist /var/www/html/wp-content/themes/nufarm/dist
 
 EXPOSE 80 443
