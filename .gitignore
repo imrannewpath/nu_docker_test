@@ -1,0 +1,10 @@
+# Logs
+/apache_log/*
+!/apache_log/.gitignore
+
+# Uploads
+/uploads/*
+!/uploads/.gitignore
+
+# env
+.env

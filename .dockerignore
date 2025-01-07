@@ -1,0 +1,11 @@
+# Uploads
+project/wp-content/uploads
+
+#ignore gulp generated files
+project/wp-content/themes/nufarm/dist
+
+# other random files
+project/server.txt
+project/upgrade/
+
+project/wp-content/debug.log

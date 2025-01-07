@@ -1,0 +1,16 @@
+services:
+  web:
+    build:
+      context: .
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    volumes:
+      - ./apache_log:/var/log/apache2
+      - ./uploads:/var/www/html/wp-content/uploads
+      - ./wp-config.php:/var/www/html/wp-config.php
+    ports:
+      - ${APP_EXPOSE_PORT}:80
+    env_file:
+      - .env
+    environment:
+      - WP_DB_HOST=db_container
